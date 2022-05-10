@@ -4378,12 +4378,6 @@ struct singularity_supreme_t : public stat_buff_t
 
 void singularity_supreme( special_effect_t& effect )
 {
-  /*auto lockout =
-      make_buff( effect.player, "singularity_supreme_lockout", effect.player->find_spell( 368865 ) )->set_quiet( true );
-
-  auto buff =
-      make_buff<stat_buff_t>( effect.player, "singularity_supreme", effect.player->find_spell( 368863 ), effect.item );*/
-
   // despite spell data proc flags, logs seem to show it only procs on damage spell casts
   effect.proc_flags2_ = PF2_CAST_DAMAGE;
 
@@ -4400,7 +4394,7 @@ void singularity_supreme( special_effect_t& effect )
       } );
 }
 
-// Action to trigger the chain break for the Chains of Domination trinket
+// Action to weapon swap Antumbra
 struct antumbra_swap_t : public action_t
 {
   singularity_supreme_t* singularity_buff;
