@@ -4347,6 +4347,7 @@ struct singularity_supreme_t : public stat_buff_t
     if ( !swap_stat_compensation )
     {
       swap_stat_compensation = make_buff<stat_buff_t>( p, "swap_stat_compensation" );
+      swap_stat_compensation->set_name_reporting( "antumbra_swapped_with_other_weapon" );
       swap_stat_compensation->set_duration( 0_s )->set_can_cancel( false );
     }
 
@@ -4363,6 +4364,8 @@ struct singularity_supreme_t : public stat_buff_t
         swap_stat_compensation->add_stat( STAT_VERSATILITY_RATING, p->antumbra.vers_diff );
       if ( p->antumbra.mastery_diff != 0.0 )
         swap_stat_compensation->add_stat( STAT_MASTERY_RATING, p->antumbra.mastery_diff );
+      if ( p->antumbra.stam_diff != 0.0 )
+        swap_stat_compensation->add_stat( STAT_STAMINA, p->antumbra.stam_diff );
     }
 
     set_expire_at_max_stack( true );
