@@ -4399,7 +4399,7 @@ struct antumbra_swap_t : public action_t
 {
   singularity_supreme_t* singularity_buff;
 
-  antumbra_swap_t( player_t* p, util::string_view opt ) : action_t( ACTION_OTHER, "antumbra_swap_t", p )
+  antumbra_swap_t( player_t* p, util::string_view opt ) : action_t( ACTION_OTHER, "antumbra_swap", p )
   {
     parse_options( opt );
     trigger_gcd           = 1500_ms;
