@@ -4403,7 +4403,7 @@ struct antumbra_swap_t : public action_t
   {
     parse_options( opt );
     trigger_gcd           = 1500_ms;
-    gcd_type              = gcd_haste_type ::NONE;
+    gcd_type              = gcd_haste_type::NONE;
     harmful               = false;
     ignore_false_positive = true;
   }
