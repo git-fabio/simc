@@ -668,8 +668,8 @@ struct player_t : public actor_t
     double crit_diff    = 0.0;
     double mastery_diff = 0.0;
     double vers_diff    = 0.0;
-
-  } antumbra;
+    double stam_diff    = 0.0;
+  } antumbra; // 9.2 Rygelon Dagger
 
   struct passives_t
   {
