@@ -11740,6 +11740,7 @@ void player_t::create_options()
   add_option( opt_float( "antumbra.haste_diff", antumbra.haste_diff ) );
   add_option( opt_float( "antumbra.mastery_diff", antumbra.mastery_diff ) );
   add_option( opt_float( "antumbra.vers_diff", antumbra.vers_diff ) );
+  add_option( opt_float( "antumbra.stam_diff", antumbra.stam_diff ) );
 
   // Resources
   add_option( opt_func( "initial_resource", parse_initial_resource ) );
